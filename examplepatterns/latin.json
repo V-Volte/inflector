@@ -1,0 +1,1763 @@
+{
+  "name": "Latin",
+  "moods": [
+    "Indicative",
+    "Subjunctive",
+    "Imperative"
+  ],
+  "tenses": [
+    "Present",
+    "Imperfect",
+    "Future",
+    "Perfect",
+    "Pluperfect",
+    "Future Perfect"
+  ],
+  "numbers": [
+    "Singular",
+    "Plural"
+  ],
+  "persons": [
+    "First",
+    "Second",
+    "Third"
+  ],
+  "cases": [
+    "Nominative",
+    "Genitive",
+    "Dative",
+    "Accusative",
+    "Ablative",
+    "Vocative",
+    "Locative"
+  ],
+  "voices": [
+    "Active",
+    "Passive"
+  ],
+  "genders": [
+    "Masculine",
+    "Feminine",
+    "Neuter"
+  ],
+  "nounInflectionClasses": [
+    {
+      "name": "First Declension",
+      "rootPatterns": [
+        "(.*)(us)",
+        "(.*)(a)",
+        "(.*)(am)"
+      ],
+      "numbers": [
+        "Singular",
+        "Plural"
+      ],
+      "genders": [
+        "Masculine",
+        "Feminine",
+        "Neuter"
+      ],
+      "cases": [
+        "Nominative",
+        "Genitive",
+        "Dative",
+        "Accusative",
+        "Ablative",
+        "Vocative",
+        "Locative"
+      ],
+      "inflectionPatternMatrix": {
+        "Singular": {
+          "Masculine": {
+            "Nominative": {
+              "rootPattern": "(.*)(us)",
+              "replacements": [
+                "us"
+              ],
+              "inflectionIndices": [
+                1
+              ]
+            },
+            "Genitive": {
+              "rootPattern": "(.*)(us)",
+              "replacements": [
+                "ī"
+              ],
+              "inflectionIndices": [
+                1
+              ]
+            },
+            "Dative": {
+              "rootPattern": "(.*)(us)",
+              "replacements": [
+                "ō"
+              ],
+              "inflectionIndices": [
+                1
+              ]
+            },
+            "Accusative": {
+              "rootPattern": "(.*)(us)",
+              "replacements": [
+                "um"
+              ],
+              "inflectionIndices": [
+                1
+              ]
+            },
+            "Ablative": {
+              "rootPattern": "(.*)(us)",
+              "replacements": [
+                "ō"
+              ],
+              "inflectionIndices": [
+                1
+              ]
+            },
+            "Vocative": {
+              "rootPattern": "(.*)(us)",
+              "replacements": [
+                "e"
+              ],
+              "inflectionIndices": [
+                1
+              ]
+            },
+            "Locative": {
+              "rootPattern": "(.*)(us)",
+              "replacements": [
+                "ī"
+              ],
+              "inflectionIndices": [
+                1
+              ]
+            }
+          },
+          "Feminine": {
+            "Nominative": {
+              "rootPattern": "(.*)(a)",
+              "replacements": [
+                "a"
+              ],
+              "inflectionIndices": [
+                1
+              ]
+            },
+            "Genitive": {
+              "rootPattern": "(.*)(a)",
+              "replacements": [
+                "ae"
+              ],
+              "inflectionIndices": [
+                1
+              ]
+            },
+            "Dative": {
+              "rootPattern": "(.*)(a)",
+              "replacements": [
+                "ae"
+              ],
+              "inflectionIndices": [
+                1
+              ]
+            },
+            "Accusative": {
+              "rootPattern": "(.*)(a)",
+              "replacements": [
+                "am"
+              ],
+              "inflectionIndices": [
+                1
+              ]
+            },
+            "Ablative": {
+              "rootPattern": "(.*)(a)",
+              "replacements": [
+                "ā"
+              ],
+              "inflectionIndices": [
+                1
+              ]
+            },
+            "Vocative": {
+              "rootPattern": "(.*)(a)",
+              "replacements": [
+                "a"
+              ],
+              "inflectionIndices": [
+                1
+              ]
+            },
+            "Locative": {
+              "rootPattern": "(.*)(a)",
+              "replacements": [
+                "ae"
+              ],
+              "inflectionIndices": [
+                1
+              ]
+            }
+          },
+          "Neuter": {
+            "Nominative": {
+              "rootPattern": "(.*)(am)",
+              "replacements": [
+                "um"
+              ],
+              "inflectionIndices": [
+                1
+              ]
+            },
+            "Genitive": {
+              "rootPattern": "(.*)(am)",
+              "replacements": [
+                "ī"
+              ],
+              "inflectionIndices": [
+                1
+              ]
+            },
+            "Dative": {
+              "rootPattern": "(.*)(am)",
+              "replacements": [
+                "ō"
+              ],
+              "inflectionIndices": [
+                1
+              ]
+            },
+            "Accusative": {
+              "rootPattern": "(.*)(am)",
+              "replacements": [
+                "um"
+              ],
+              "inflectionIndices": [
+                1
+              ]
+            },
+            "Ablative": {
+              "rootPattern": "(.*)(am)",
+              "replacements": [
+                "ō"
+              ],
+              "inflectionIndices": [
+                1
+              ]
+            },
+            "Vocative": {
+              "rootPattern": "(.*)(am)",
+              "replacements": [
+                "um"
+              ],
+              "inflectionIndices": [
+                1
+              ]
+            },
+            "Locative": {
+              "rootPattern": "(.*)(am)",
+              "replacements": [
+                "ī"
+              ],
+              "inflectionIndices": [
+                1
+              ]
+            }
+          }
+        },
+        "Plural": {
+          "Masculine": {
+            "Nominative": {
+              "rootPattern": "(.*)(us)",
+              "replacements": [
+                "ī"
+              ],
+              "inflectionIndices": [
+                1
+              ]
+            },
+            "Genitive": {
+              "rootPattern": "(.*)(us)",
+              "replacements": [
+                "ōrum"
+              ],
+              "inflectionIndices": [
+                1
+              ]
+            },
+            "Dative": {
+              "rootPattern": "(.*)(us)",
+              "replacements": [
+                "īs"
+              ],
+              "inflectionIndices": [
+                1
+              ]
+            },
+            "Accusative": {
+              "rootPattern": "(.*)(us)",
+              "replacements": [
+                "ōs"
+              ],
+              "inflectionIndices": [
+                1
+              ]
+            },
+            "Ablative": {
+              "rootPattern": "(.*)(us)",
+              "replacements": [
+                "īs"
+              ],
+              "inflectionIndices": [
+                1
+              ]
+            },
+            "Vocative": {
+              "rootPattern": "(.*)(us)",
+              "replacements": [
+                "ī"
+              ],
+              "inflectionIndices": [
+                1
+              ]
+            },
+            "Locative": {
+              "rootPattern": "(.*)(us)",
+              "replacements": [
+                "īs"
+              ],
+              "inflectionIndices": [
+                1
+              ]
+            }
+          },
+          "Feminine": {
+            "Nominative": {
+              "rootPattern": "(.*)(a)",
+              "replacements": [
+                "ae"
+              ],
+              "inflectionIndices": [
+                1
+              ]
+            },
+            "Genitive": {
+              "rootPattern": "(.*)(a)",
+              "replacements": [
+                "ārum"
+              ],
+              "inflectionIndices": [
+                1
+              ]
+            },
+            "Dative": {
+              "rootPattern": "(.*)(a)",
+              "replacements": [
+                "īs"
+              ],
+              "inflectionIndices": [
+                1
+              ]
+            },
+            "Accusative": {
+              "rootPattern": "(.*)(a)",
+              "replacements": [
+                "ās"
+              ],
+              "inflectionIndices": [
+                1
+              ]
+            },
+            "Ablative": {
+              "rootPattern": "(.*)(a)",
+              "replacements": [
+                "īs"
+              ],
+              "inflectionIndices": [
+                1
+              ]
+            },
+            "Vocative": {
+              "rootPattern": "(.*)(a)",
+              "replacements": [
+                "ae"
+              ],
+              "inflectionIndices": [
+                1
+              ]
+            },
+            "Locative": {
+              "rootPattern": "(.*)(a)",
+              "replacements": [
+                "īs"
+              ],
+              "inflectionIndices": [
+                1
+              ]
+            }
+          },
+          "Neuter": {
+            "Nominative": {
+              "rootPattern": "(.*)(am)",
+              "replacements": [
+                "a"
+              ],
+              "inflectionIndices": [
+                1
+              ]
+            },
+            "Genitive": {
+              "rootPattern": "(.*)(am)",
+              "replacements": [
+                "ōrum"
+              ],
+              "inflectionIndices": [
+                1
+              ]
+            },
+            "Dative": {
+              "rootPattern": "(.*)(am)",
+              "replacements": [
+                "īs"
+              ],
+              "inflectionIndices": [
+                1
+              ]
+            },
+            "Accusative": {
+              "rootPattern": "(.*)(am)",
+              "replacements": [
+                "a"
+              ],
+              "inflectionIndices": [
+                1
+              ]
+            },
+            "Ablative": {
+              "rootPattern": "(.*)(am)",
+              "replacements": [
+                "īs"
+              ],
+              "inflectionIndices": [
+                1
+              ]
+            },
+            "Vocative": {
+              "rootPattern": "(.*)(am)",
+              "replacements": [
+                "a"
+              ],
+              "inflectionIndices": [
+                1
+              ]
+            },
+            "Locative": {
+              "rootPattern": "(.*)(am)",
+              "replacements": [
+                "īs"
+              ],
+              "inflectionIndices": [
+                1
+              ]
+            }
+          }
+        }
+      }
+    }
+  ],
+  "verbInflectionClasses": [
+    {
+      "name": "First Conjugation",
+      "rootPattern": "/(.*)(āre)/",
+      "moods": [
+        "Indicative",
+        "Subjunctive",
+        "Imperative"
+      ],
+      "voices": [
+        "Present",
+        "Imperfect",
+        "Future",
+        "Perfect",
+        "Pluperfect",
+        "Future Perfect"
+      ],
+      "tenses": [
+        "Singular",
+        "Plural"
+      ],
+      "numbers": [
+        "First",
+        "Second",
+        "Third"
+      ],
+      "inflectionPatternMatrix": {
+        "Indicative": {
+          "Active": {
+            "Present": {
+              "Singular": {
+                "First": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ō"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ās"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Third": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "at"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              },
+              "Plural": {
+                "First": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "āmus"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ātis"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Third": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ant"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              }
+            },
+            "Imperfect": {
+              "Singular": {
+                "First": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ābam"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ābās"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Third": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ābat"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              },
+              "Plural": {
+                "First": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ābāmus"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ābātis"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Third": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ābant"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              }
+            },
+            "Future": {
+              "Singular": {
+                "First": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ābō"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ābis"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Third": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ābit"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              },
+              "Plural": {
+                "First": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ābimus"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ābitis"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Third": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ābunt"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              }
+            },
+            "Perfect": {
+              "Singular": {
+                "First": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "āvī"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "āvistī"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Third": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "āvit"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              },
+              "Plural": {
+                "First": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "āvimus"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "āvistis"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Third": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "āvērunt"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              }
+            },
+            "Pluperfect": {
+              "Singular": {
+                "First": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "āveram"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "āverās"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Third": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "āverat"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              },
+              "Plural": {
+                "First": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "āverāmus"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "āverātis"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Third": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "āverant"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              }
+            },
+            "Future Perfect": {
+              "Singular": {
+                "First": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "āverō"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "āveris"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Third": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "āverit"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              },
+              "Plural": {
+                "First": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "āverimus"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "āveritis"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Third": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "āverint"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              }
+            }
+          },
+          "Passive": {
+            "Present": {
+              "Singular": {
+                "First": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "or"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "āris"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Third": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ātur"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              },
+              "Plural": {
+                "First": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "āmur"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "āminī"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Third": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "antur"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              }
+            },
+            "Imperfect": {
+              "Singular": {
+                "First": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ābar"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ābāris"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Third": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ābātur"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              },
+              "Plural": {
+                "First": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ābāmur"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ābāminī"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Third": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ābantur"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              }
+            },
+            "Future": {
+              "Singular": {
+                "First": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ābor"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "āberis"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Third": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ābitur"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              },
+              "Plural": {
+                "First": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ābimur"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ābiminī"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Third": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ābuntur"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              }
+            },
+            "Perfect": {
+              "Singular": {
+                "First": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ātus sum"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ātus es"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Third": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ātus est"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              },
+              "Plural": {
+                "First": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ātī sumus"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ātī estis"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Third": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ātī sunt"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              }
+            },
+            "Pluperfect": {
+              "Singular": {
+                "First": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ātus eram"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ātus erās"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Third": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ātus erat"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              },
+              "Plural": {
+                "First": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ātī erāmus"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ātī erātis"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Third": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ātī erant"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              }
+            },
+            "Future Perfect": {
+              "Singular": {
+                "First": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ātus erō"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ātus eris"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Third": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ātus erit"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              },
+              "Plural": {
+                "First": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ātī erimus"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ātī eritis"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Third": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ātī erunt"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "Subjunctive": {
+          "Active": {
+            "Present": {
+              "Singular": {
+                "First": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "em"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ēs"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Third": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "et"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              },
+              "Plural": {
+                "First": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ēmus"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ētis"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Third": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ent"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              }
+            },
+            "Imperfect": {
+              "Singular": {
+                "First": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ārem"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ārēs"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Third": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "āret"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              },
+              "Plural": {
+                "First": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ārēmus"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ārētis"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Third": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ārent"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              }
+            },
+            "Perfect": {
+              "Singular": {
+                "First": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "āverim"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "āverīs"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Third": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "āverit"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              },
+              "Plural": {
+                "First": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "āverīmus"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "āverītis"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Third": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "āverint"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              }
+            },
+            "Pluperfect": {
+              "Singular": {
+                "First": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "āvissem"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "āvissēs"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Third": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "āvisset"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              },
+              "Plural": {
+                "First": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "āvissēmus"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "āvissētis"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Third": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "āvissent"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              }
+            }
+          },
+          "Passive": {
+            "Present": {
+              "Singular": {
+                "First": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "er"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ēris"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Third": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ētur"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              },
+              "Plural": {
+                "First": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ēmur"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ēminī"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Third": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "entur"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              }
+            },
+            "Imperfect": {
+              "Singular": {
+                "First": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ārer"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ārēris"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Third": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ārētur"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              },
+              "Plural": {
+                "First": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ārēmur"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ārēminī"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Third": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ārentur"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              }
+            },
+            "Perfect": {
+              "Singular": {
+                "First": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ātus sim"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ātus sīs"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Third": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ātus sit"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              },
+              "Plural": {
+                "First": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ātī sīmus"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ātī sītis"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Third": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ātī sint"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              }
+            },
+            "Pluperfect": {
+              "Singular": {
+                "First": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ātus essem"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ātus essēs"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Third": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ātus esset"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              },
+              "Plural": {
+                "First": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ātī essēmus"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ātī essētis"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                },
+                "Third": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ātī essent"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "Imperative": {
+          "Active": {
+            "Present": {
+              "Singular": {
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "ā"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              },
+              "Plural": {
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "āte"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              }
+            }
+          },
+          "Passive": {
+            "Present": {
+              "Singular": {
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "āre"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              },
+              "Plural": {
+                "Second": {
+                  "rootPattern": "/(.*)(āre)/",
+                  "replacements": [
+                    "āminī"
+                  ],
+                  "inflectionIndices": [
+                    1
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ]
+}
