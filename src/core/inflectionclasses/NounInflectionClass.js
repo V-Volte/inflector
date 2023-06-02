@@ -1,50 +1,84 @@
-const InflectionClass = require('./inflectionclass.js');
+const InflectionClass = require("./inflectionclass.js");
 
-class NounInflectionClass {
-    constructor(language, name, rootPattern, numbers, cases) {
-        this.name = name;
-        this.language = language;
-        this.rootPattern = rootPattern;
+class NounInflectionClass extends InflectionClass {
+    constructor(name, rootPatterns, numbers, genders, cases) {
+        super(name);
+        this.rootPatterns = rootPatterns;
         this.numbers = numbers;
+        this.genders = genders;
         this.cases = cases;
         this.inflectionPatternMatrix = {};
     }
 
-    addInflectionPattern(number, case_, inflectionPattern) {
+    addInflectionPattern(
+        number,
+        gender,
+        case_,
+        replacements,
+        inflectionIndices
+    ) {
         if (this.inflectionPatternMatrix[number] === undefined) {
             this.inflectionPatternMatrix[number] = {};
         }
-        if (this.inflectionPatternMatrix[number][case_] === undefined) {
-            this.inflectionPatternMatrix[number][case_] = {};
+
+        if (this.inflectionPatternMatrix[number][gender] === undefined) {
+            this.inflectionPatternMatrix[number][gender] = {};
         }
 
-        this.inflectionPatternMatrix[number][case_] = inflectionPattern;
+        if (this.inflectionPatternMatrix[number][gender][case_] === undefined) {
+            this.inflectionPatternMatrix[number][gender][case_] = {};
+        }
+
+        this.inflectionPatternMatrix = new InflectionPattern(
+            this.rootPatterns[this.genders.indexOf(gender)],
+            replacements,
+            inflectionIndices
+        );
     }
 
-    inflect(root, number, case_) {
-        let ret = `ReturnValueOf( ${root}, ${number}, ${case_} )`
-        try {
-            ret = this.inflectionPatternMatrix[number][case_].inflect(root);
+    addInflectionPattern(number, gender, case_, inflectionPattern) {
+        if (this.inflectionPatternMatrix[number] === undefined) {
+            this.inflectionPatternMatrix[number] = {};
         }
-        catch (e) {
-            //console.log(e);
-            ret = ""
+
+        if (this.inflectionPatternMatrix[number][gender] === undefined) {
+            this.inflectionPatternMatrix[number][gender] = {};
+        }
+
+        if (this.inflectionPatternMatrix[number][gender][case_] === undefined) {
+            this.inflectionPatternMatrix[number][gender][case_] = {};
+        }
+
+        this.inflectionPatternMatrix[number][gender][case_] = inflectionPattern;
+    }
+
+    inflect(root, number, gender, case_) {
+        let ret = `ReturnValueOf( ${root}, ${number}, ${gender}, ${case_} )`;
+        try {
+            ret =
+                this.inflectionPatternMatrix[number][gender][case_].inflect(
+                    root
+                );
+        } catch (e) {
+            console.error(e);
+            ret = "";
         }
         return ret;
     }
 
-    getInflectionPattern(number, case_) {
-        return this.inflectionPatternMatrix[number][case_];
+    getInflectionPattern(number, gender, case_) {
+        return this.inflectionPatternMatrix[number][gender][case_];
     }
 
     getInflectionTable() {
         return this.inflectionPatternMatrix;
     }
 
-    generateMarkdownInflectionTable(root) {
+    generateMarkdownInflectionTable(root, gender) {
         let ret = `# Inflection Table of *${root}*\n\n`;
-        
+
         // Print numbers in columns and cases in rows
+        ret += `## ${gender} gender\n\n`;
         ret += "| Case |";
         for (let number of this.numbers) {
             ret += ` ${number} |`;
@@ -53,12 +87,12 @@ class NounInflectionClass {
         for (let number of this.numbers) {
             ret += " --- |";
         }
-        ret += '--- |'
+        ret += "--- |";
         ret += "\n";
         for (let case_ of this.cases) {
             ret += `| ${case_} |`;
             for (let number of this.numbers) {
-                ret += ` ${this.inflect(root, number, case_)} |`;
+                ret += ` ${this.inflect(root, number, gender, case_)} |`;
             }
             ret += "\n";
         }

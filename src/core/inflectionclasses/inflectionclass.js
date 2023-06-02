@@ -1,7 +1,10 @@
 class InflectionClass {
-    constructor(language, name) {
+    constructor(name) {
         this.name = name;
-        this.language = language;
+    }
+
+    toString() {
+        return this.name;
     }
 }
 
