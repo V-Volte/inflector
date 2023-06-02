@@ -33,15 +33,9 @@ class Language {
 
     getInflectionClass(type, inflectionClassName) {
         if (type.toLowerCase() === "noun") {
-            return this.nounInflectionClasses.find(
-                (inflectionClass) =>
-                    inflectionClass.name === inflectionClassName
-            );
-        } else if (type.toUpperCase() === "verb") {
-            return this.verbInflectionClasses.find(
-                (inflectionClass) =>
-                    inflectionClass.name === inflectionClassName
-            );
+            return this.nounInflectionClasses.find((inflectionClass) => inflectionClass.name === inflectionClassName);
+        } else if (type.toLowerCase() === "verb") {
+            return this.verbInflectionClasses.find((inflectionClass) => inflectionClass.name === inflectionClassName);
         }
         throw new Error("Invalid type (should be 'noun' or 'verb')");
     }
@@ -51,8 +45,8 @@ class Language {
         try {
             ret = inflectionClass.inflect(root, ...args);
         } catch (e) {
-            //console.log(e);
-            ret = "";
+            console.log(e);
+            //ret = "";
         }
         return ret;
     }
