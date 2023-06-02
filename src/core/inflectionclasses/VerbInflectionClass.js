@@ -19,6 +19,42 @@ class VerbInflectionClass extends InflectionClass {
         tense,
         number,
         person,
+        replacements,
+        inflectionIndices
+    ) {
+        if (this.inflectionPatternMatrix[mood] === undefined) {
+            this.inflectionPatternMatrix[mood] = {};
+        }
+
+        if (this.inflectionPatternMatrix[mood][voice] === undefined) {
+            this.inflectionPatternMatrix[mood][voice] = {};
+        }
+
+        if (this.inflectionPatternMatrix[mood][voice][tense] === undefined) {
+            this.inflectionPatternMatrix[mood][voice][tense] = {};
+        }
+
+        if (
+            this.inflectionPatternMatrix[mood][voice][tense][number] ===
+            undefined
+        ) {
+            this.inflectionPatternMatrix[mood][voice][tense][number] = {};
+        }
+
+        this.inflectionPatternMatrix[mood][voice][tense][number][person] =
+            new InflectionPattern(
+                this.rootPattern,
+                replacements,
+                inflectionIndices
+            );
+    }
+
+    addInflectionPattern(
+        mood,
+        voice,
+        tense,
+        number,
+        person,
         inflectionPattern
     ) {
         if (this.inflectionPatternMatrix[mood] === undefined) {
