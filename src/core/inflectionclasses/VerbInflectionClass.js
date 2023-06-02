@@ -1,10 +1,6 @@
-class InflectionClass {
-    constructor(language, name) {
-        this.name = name;
-        this.language = language;
-    }
-}
+const InflectionClass = require("./inflectionclass.js");
 
+//TODO: Add voices
 class VerbInflectionClass extends InflectionClass {
     constructor(language, name, rootPattern, moods, tenses, numbers, persons) {
         super(language, name);
@@ -14,27 +10,9 @@ class VerbInflectionClass extends InflectionClass {
         this.numbers = numbers;
         this.persons = persons;
         this.inflectionPatternMatrix = {};
-
-        // for (let mood of moods) {
-        //     let moodRow = [  ];
-        //     for (let tense of tenses) {
-        //         let tenseRow = [  ];
-        //         for (let number of numbers) {
-        //             let numberRow = [  ];
-        //             for (let person of persons) {
-        //                 numberRow.push(null);
-        //             }
-        //             tenseRow.push(numberRow);
-        //         }
-        //         moodRow.push(tenseRow);
-        //     }
-        //     this.inflectionPatternMatrix.push(moodRow);
-        // }
     }
 
     addInflectionPattern(mood, tense, number, person, inflectionPattern) {
-        //console.log(mood, tense, number, person, inflectionPattern)
-
         if (this.inflectionPatternMatrix[mood] === undefined) {
             this.inflectionPatternMatrix[mood] = {};
         }
@@ -107,4 +85,3 @@ class VerbInflectionClass extends InflectionClass {
 }
 
 module.exports = VerbInflectionClass;
-
