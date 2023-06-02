@@ -13,15 +13,7 @@ class VerbInflectionClass extends InflectionClass {
         this.inflectionPatternMatrix = {};
     }
 
-    addInflectionPattern(
-        mood,
-        voice,
-        tense,
-        number,
-        person,
-        replacements,
-        inflectionIndices
-    ) {
+    addInflectionPattern(mood, voice, tense, number, person, replacements, inflectionIndices) {
         if (this.inflectionPatternMatrix[mood] === undefined) {
             this.inflectionPatternMatrix[mood] = {};
         }
@@ -34,29 +26,18 @@ class VerbInflectionClass extends InflectionClass {
             this.inflectionPatternMatrix[mood][voice][tense] = {};
         }
 
-        if (
-            this.inflectionPatternMatrix[mood][voice][tense][number] ===
-            undefined
-        ) {
+        if (this.inflectionPatternMatrix[mood][voice][tense][number] === undefined) {
             this.inflectionPatternMatrix[mood][voice][tense][number] = {};
         }
 
-        this.inflectionPatternMatrix[mood][voice][tense][number][person] =
-            new InflectionPattern(
-                this.rootPattern,
-                replacements,
-                inflectionIndices
-            );
+        this.inflectionPatternMatrix[mood][voice][tense][number][person] = new InflectionPattern(
+            this.rootPattern,
+            replacements,
+            inflectionIndices
+        );
     }
 
-    addInflectionPattern(
-        mood,
-        voice,
-        tense,
-        number,
-        person,
-        inflectionPattern
-    ) {
+    addInflectionPattern(mood, voice, tense, number, person, inflectionPattern) {
         if (this.inflectionPatternMatrix[mood] === undefined) {
             this.inflectionPatternMatrix[mood] = {};
         }
@@ -68,24 +49,17 @@ class VerbInflectionClass extends InflectionClass {
         if (this.inflectionPatternMatrix[mood][voice][tense] === undefined) {
             this.inflectionPatternMatrix[mood][voice][tense] = {};
         }
-        if (
-            this.inflectionPatternMatrix[mood][voice][tense][number] ===
-            undefined
-        ) {
+        if (this.inflectionPatternMatrix[mood][voice][tense][number] === undefined) {
             this.inflectionPatternMatrix[mood][voice][tense][number] = {};
         }
 
-        this.inflectionPatternMatrix[mood][voice][tense][number][person] =
-            inflectionPattern;
+        this.inflectionPatternMatrix[mood][voice][tense][number][person] = inflectionPattern;
     }
 
     inflect(root, mood, voice, tense, number, person) {
         let ret = `ReturnValueOf( ${root}, ${mood}, ${voice}, ${tense}, ${number}, ${person} )`;
         try {
-            ret =
-                this.inflectionPatternMatrix[mood][tense][number][
-                    person
-                ].inflect(root);
+            ret = this.inflectionPatternMatrix[mood][voice][tense][number][person].inflect(root);
         } catch (e) {
             //console.log(e);
             ret = "";
@@ -136,15 +110,7 @@ class VerbInflectionClass extends InflectionClass {
                     for (let person of this.persons) {
                         ret += `|**${person}**|`;
                         for (let number of this.numbers)
-                            ret +=
-                                this.inflect(
-                                    root,
-                                    mood,
-                                    voice,
-                                    tense,
-                                    number,
-                                    person
-                                ) + "|";
+                            ret += this.inflect(root, mood, voice, tense, number, person) + "|";
                         ret += "\n";
                     }
                 }
