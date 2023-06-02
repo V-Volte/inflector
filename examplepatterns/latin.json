@@ -467,13 +467,17 @@
   "verbInflectionClasses": [
     {
       "name": "First Conjugation",
-      "rootPattern": "/(.*)(āre)/",
+      "rootPattern": "(.*)(āre)",
       "moods": [
         "Indicative",
         "Subjunctive",
         "Imperative"
       ],
       "voices": [
+        "Active",
+        "Passive"
+      ],
+      "tenses": [
         "Present",
         "Imperfect",
         "Future",
@@ -481,11 +485,11 @@
         "Pluperfect",
         "Future Perfect"
       ],
-      "tenses": [
+      "numbers": [
         "Singular",
         "Plural"
       ],
-      "numbers": [
+      "persons": [
         "First",
         "Second",
         "Third"
@@ -496,7 +500,7 @@
             "Present": {
               "Singular": {
                 "First": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ō"
                   ],
@@ -505,7 +509,7 @@
                   ]
                 },
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ās"
                   ],
@@ -514,7 +518,7 @@
                   ]
                 },
                 "Third": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "at"
                   ],
@@ -525,7 +529,7 @@
               },
               "Plural": {
                 "First": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "āmus"
                   ],
@@ -534,7 +538,7 @@
                   ]
                 },
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ātis"
                   ],
@@ -543,7 +547,7 @@
                   ]
                 },
                 "Third": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ant"
                   ],
@@ -556,7 +560,7 @@
             "Imperfect": {
               "Singular": {
                 "First": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ābam"
                   ],
@@ -565,7 +569,7 @@
                   ]
                 },
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ābās"
                   ],
@@ -574,7 +578,7 @@
                   ]
                 },
                 "Third": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ābat"
                   ],
@@ -585,7 +589,7 @@
               },
               "Plural": {
                 "First": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ābāmus"
                   ],
@@ -594,7 +598,7 @@
                   ]
                 },
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ābātis"
                   ],
@@ -603,7 +607,7 @@
                   ]
                 },
                 "Third": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ābant"
                   ],
@@ -616,7 +620,7 @@
             "Future": {
               "Singular": {
                 "First": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ābō"
                   ],
@@ -625,7 +629,7 @@
                   ]
                 },
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ābis"
                   ],
@@ -634,7 +638,7 @@
                   ]
                 },
                 "Third": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ābit"
                   ],
@@ -645,7 +649,7 @@
               },
               "Plural": {
                 "First": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ābimus"
                   ],
@@ -654,7 +658,7 @@
                   ]
                 },
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ābitis"
                   ],
@@ -663,7 +667,7 @@
                   ]
                 },
                 "Third": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ābunt"
                   ],
@@ -676,7 +680,7 @@
             "Perfect": {
               "Singular": {
                 "First": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "āvī"
                   ],
@@ -685,7 +689,7 @@
                   ]
                 },
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "āvistī"
                   ],
@@ -694,7 +698,7 @@
                   ]
                 },
                 "Third": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "āvit"
                   ],
@@ -705,7 +709,7 @@
               },
               "Plural": {
                 "First": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "āvimus"
                   ],
@@ -714,7 +718,7 @@
                   ]
                 },
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "āvistis"
                   ],
@@ -723,7 +727,7 @@
                   ]
                 },
                 "Third": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "āvērunt"
                   ],
@@ -736,7 +740,7 @@
             "Pluperfect": {
               "Singular": {
                 "First": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "āveram"
                   ],
@@ -745,7 +749,7 @@
                   ]
                 },
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "āverās"
                   ],
@@ -754,7 +758,7 @@
                   ]
                 },
                 "Third": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "āverat"
                   ],
@@ -765,7 +769,7 @@
               },
               "Plural": {
                 "First": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "āverāmus"
                   ],
@@ -774,7 +778,7 @@
                   ]
                 },
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "āverātis"
                   ],
@@ -783,7 +787,7 @@
                   ]
                 },
                 "Third": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "āverant"
                   ],
@@ -796,7 +800,7 @@
             "Future Perfect": {
               "Singular": {
                 "First": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "āverō"
                   ],
@@ -805,7 +809,7 @@
                   ]
                 },
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "āveris"
                   ],
@@ -814,7 +818,7 @@
                   ]
                 },
                 "Third": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "āverit"
                   ],
@@ -825,7 +829,7 @@
               },
               "Plural": {
                 "First": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "āverimus"
                   ],
@@ -834,7 +838,7 @@
                   ]
                 },
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "āveritis"
                   ],
@@ -843,7 +847,7 @@
                   ]
                 },
                 "Third": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "āverint"
                   ],
@@ -858,7 +862,7 @@
             "Present": {
               "Singular": {
                 "First": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "or"
                   ],
@@ -867,7 +871,7 @@
                   ]
                 },
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "āris"
                   ],
@@ -876,7 +880,7 @@
                   ]
                 },
                 "Third": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ātur"
                   ],
@@ -887,7 +891,7 @@
               },
               "Plural": {
                 "First": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "āmur"
                   ],
@@ -896,7 +900,7 @@
                   ]
                 },
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "āminī"
                   ],
@@ -905,7 +909,7 @@
                   ]
                 },
                 "Third": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "antur"
                   ],
@@ -918,7 +922,7 @@
             "Imperfect": {
               "Singular": {
                 "First": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ābar"
                   ],
@@ -927,7 +931,7 @@
                   ]
                 },
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ābāris"
                   ],
@@ -936,7 +940,7 @@
                   ]
                 },
                 "Third": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ābātur"
                   ],
@@ -947,7 +951,7 @@
               },
               "Plural": {
                 "First": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ābāmur"
                   ],
@@ -956,7 +960,7 @@
                   ]
                 },
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ābāminī"
                   ],
@@ -965,7 +969,7 @@
                   ]
                 },
                 "Third": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ābantur"
                   ],
@@ -978,7 +982,7 @@
             "Future": {
               "Singular": {
                 "First": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ābor"
                   ],
@@ -987,7 +991,7 @@
                   ]
                 },
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "āberis"
                   ],
@@ -996,7 +1000,7 @@
                   ]
                 },
                 "Third": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ābitur"
                   ],
@@ -1007,7 +1011,7 @@
               },
               "Plural": {
                 "First": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ābimur"
                   ],
@@ -1016,7 +1020,7 @@
                   ]
                 },
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ābiminī"
                   ],
@@ -1025,7 +1029,7 @@
                   ]
                 },
                 "Third": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ābuntur"
                   ],
@@ -1038,7 +1042,7 @@
             "Perfect": {
               "Singular": {
                 "First": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ātus sum"
                   ],
@@ -1047,7 +1051,7 @@
                   ]
                 },
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ātus es"
                   ],
@@ -1056,7 +1060,7 @@
                   ]
                 },
                 "Third": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ātus est"
                   ],
@@ -1067,7 +1071,7 @@
               },
               "Plural": {
                 "First": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ātī sumus"
                   ],
@@ -1076,7 +1080,7 @@
                   ]
                 },
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ātī estis"
                   ],
@@ -1085,7 +1089,7 @@
                   ]
                 },
                 "Third": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ātī sunt"
                   ],
@@ -1098,7 +1102,7 @@
             "Pluperfect": {
               "Singular": {
                 "First": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ātus eram"
                   ],
@@ -1107,7 +1111,7 @@
                   ]
                 },
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ātus erās"
                   ],
@@ -1116,7 +1120,7 @@
                   ]
                 },
                 "Third": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ātus erat"
                   ],
@@ -1127,7 +1131,7 @@
               },
               "Plural": {
                 "First": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ātī erāmus"
                   ],
@@ -1136,7 +1140,7 @@
                   ]
                 },
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ātī erātis"
                   ],
@@ -1145,7 +1149,7 @@
                   ]
                 },
                 "Third": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ātī erant"
                   ],
@@ -1158,7 +1162,7 @@
             "Future Perfect": {
               "Singular": {
                 "First": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ātus erō"
                   ],
@@ -1167,7 +1171,7 @@
                   ]
                 },
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ātus eris"
                   ],
@@ -1176,7 +1180,7 @@
                   ]
                 },
                 "Third": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ātus erit"
                   ],
@@ -1187,7 +1191,7 @@
               },
               "Plural": {
                 "First": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ātī erimus"
                   ],
@@ -1196,7 +1200,7 @@
                   ]
                 },
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ātī eritis"
                   ],
@@ -1205,7 +1209,7 @@
                   ]
                 },
                 "Third": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ātī erunt"
                   ],
@@ -1222,7 +1226,7 @@
             "Present": {
               "Singular": {
                 "First": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "em"
                   ],
@@ -1231,7 +1235,7 @@
                   ]
                 },
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ēs"
                   ],
@@ -1240,7 +1244,7 @@
                   ]
                 },
                 "Third": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "et"
                   ],
@@ -1251,7 +1255,7 @@
               },
               "Plural": {
                 "First": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ēmus"
                   ],
@@ -1260,7 +1264,7 @@
                   ]
                 },
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ētis"
                   ],
@@ -1269,7 +1273,7 @@
                   ]
                 },
                 "Third": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ent"
                   ],
@@ -1282,7 +1286,7 @@
             "Imperfect": {
               "Singular": {
                 "First": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ārem"
                   ],
@@ -1291,7 +1295,7 @@
                   ]
                 },
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ārēs"
                   ],
@@ -1300,7 +1304,7 @@
                   ]
                 },
                 "Third": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "āret"
                   ],
@@ -1311,7 +1315,7 @@
               },
               "Plural": {
                 "First": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ārēmus"
                   ],
@@ -1320,7 +1324,7 @@
                   ]
                 },
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ārētis"
                   ],
@@ -1329,7 +1333,7 @@
                   ]
                 },
                 "Third": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ārent"
                   ],
@@ -1342,7 +1346,7 @@
             "Perfect": {
               "Singular": {
                 "First": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "āverim"
                   ],
@@ -1351,7 +1355,7 @@
                   ]
                 },
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "āverīs"
                   ],
@@ -1360,7 +1364,7 @@
                   ]
                 },
                 "Third": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "āverit"
                   ],
@@ -1371,7 +1375,7 @@
               },
               "Plural": {
                 "First": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "āverīmus"
                   ],
@@ -1380,7 +1384,7 @@
                   ]
                 },
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "āverītis"
                   ],
@@ -1389,7 +1393,7 @@
                   ]
                 },
                 "Third": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "āverint"
                   ],
@@ -1402,7 +1406,7 @@
             "Pluperfect": {
               "Singular": {
                 "First": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "āvissem"
                   ],
@@ -1411,7 +1415,7 @@
                   ]
                 },
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "āvissēs"
                   ],
@@ -1420,7 +1424,7 @@
                   ]
                 },
                 "Third": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "āvisset"
                   ],
@@ -1431,7 +1435,7 @@
               },
               "Plural": {
                 "First": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "āvissēmus"
                   ],
@@ -1440,7 +1444,7 @@
                   ]
                 },
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "āvissētis"
                   ],
@@ -1449,7 +1453,7 @@
                   ]
                 },
                 "Third": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "āvissent"
                   ],
@@ -1464,7 +1468,7 @@
             "Present": {
               "Singular": {
                 "First": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "er"
                   ],
@@ -1473,7 +1477,7 @@
                   ]
                 },
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ēris"
                   ],
@@ -1482,7 +1486,7 @@
                   ]
                 },
                 "Third": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ētur"
                   ],
@@ -1493,7 +1497,7 @@
               },
               "Plural": {
                 "First": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ēmur"
                   ],
@@ -1502,7 +1506,7 @@
                   ]
                 },
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ēminī"
                   ],
@@ -1511,7 +1515,7 @@
                   ]
                 },
                 "Third": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "entur"
                   ],
@@ -1524,7 +1528,7 @@
             "Imperfect": {
               "Singular": {
                 "First": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ārer"
                   ],
@@ -1533,7 +1537,7 @@
                   ]
                 },
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ārēris"
                   ],
@@ -1542,7 +1546,7 @@
                   ]
                 },
                 "Third": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ārētur"
                   ],
@@ -1553,7 +1557,7 @@
               },
               "Plural": {
                 "First": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ārēmur"
                   ],
@@ -1562,7 +1566,7 @@
                   ]
                 },
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ārēminī"
                   ],
@@ -1571,7 +1575,7 @@
                   ]
                 },
                 "Third": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ārentur"
                   ],
@@ -1584,7 +1588,7 @@
             "Perfect": {
               "Singular": {
                 "First": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ātus sim"
                   ],
@@ -1593,7 +1597,7 @@
                   ]
                 },
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ātus sīs"
                   ],
@@ -1602,7 +1606,7 @@
                   ]
                 },
                 "Third": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ātus sit"
                   ],
@@ -1613,7 +1617,7 @@
               },
               "Plural": {
                 "First": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ātī sīmus"
                   ],
@@ -1622,7 +1626,7 @@
                   ]
                 },
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ātī sītis"
                   ],
@@ -1631,7 +1635,7 @@
                   ]
                 },
                 "Third": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ātī sint"
                   ],
@@ -1644,7 +1648,7 @@
             "Pluperfect": {
               "Singular": {
                 "First": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ātus essem"
                   ],
@@ -1653,7 +1657,7 @@
                   ]
                 },
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ātus essēs"
                   ],
@@ -1662,7 +1666,7 @@
                   ]
                 },
                 "Third": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ātus esset"
                   ],
@@ -1673,7 +1677,7 @@
               },
               "Plural": {
                 "First": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ātī essēmus"
                   ],
@@ -1682,7 +1686,7 @@
                   ]
                 },
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ātī essētis"
                   ],
@@ -1691,7 +1695,7 @@
                   ]
                 },
                 "Third": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ātī essent"
                   ],
@@ -1708,7 +1712,7 @@
             "Present": {
               "Singular": {
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "ā"
                   ],
@@ -1719,7 +1723,7 @@
               },
               "Plural": {
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "āte"
                   ],
@@ -1734,7 +1738,7 @@
             "Present": {
               "Singular": {
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "āre"
                   ],
@@ -1745,7 +1749,7 @@
               },
               "Plural": {
                 "Second": {
-                  "rootPattern": "/(.*)(āre)/",
+                  "rootPattern": "(.*)(āre)",
                   "replacements": [
                     "āminī"
                   ],
