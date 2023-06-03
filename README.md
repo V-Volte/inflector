@@ -15,26 +15,28 @@ I've prepared an example file that defines a subset of the conjugation and decle
 To load the Latin language from this file, all you have to do is:
     
 ```js
-const LanguageConstructor = require('./src/core/LanguageConstructor.js');
+const LanguageConstructor = require('./src/core/LanguageConstructor');
 
 const latin = LanguageConstructor.constructLanguageFromJSONFile('./examplepatterns/latin.json');
 ```
 
-Now, you can inflect any word using the `inflect` method of the `Language` class:
+Now, you can inflect any word using the `inflectNoun` or `inflectVerb` method of the `Language` class:
 
-```js
+```ts
 const augustus = "Augustus";
 const amare = "Amāre";
 
-console.log(latin.inflect(augustus, latin.getInflectionClass('Noun', 'First Declension', 'Masculine', 'Singular', 'Nominative')));
-console.log(latin.inflect(amare, latin.getInflectionClass('Verb', 'First Conjugation', 'Indicative', 'Active', 'Present' 'Singular', 'First')));
+console.log(latin.inflectNoun(augustus, "First Declension", "Plural", "Plural", "Genitive"));
+console.log(
+    latin.inflectVerb(amare, "First Conjugation", "Indicative", "Active", "Present", "Singular", "First")
+);
 ```
 
 Or, you can use the `generateMarkdownInflectionTable()` method of `InflectionClass` to generate a Markdown table of all the inflections of a word:
 
 ```js
 const fs = require('fs');
-fs.writeFileSync('inflections.md', latin.getInflectionClass('Noun', 'First Declension').generateMarkdownInflectionTable('Rōmāna'))
+fs.writeFileSync('inflections.md', latin.getNounInflectionClass("First Declension")?.generateMarkdownInflectionTable(augustus, "Masculine"))
 ```
 
 ## Defining a language

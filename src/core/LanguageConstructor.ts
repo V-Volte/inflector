@@ -1,12 +1,12 @@
-const Language = require("./language.js");
-const NounInflectionClass = require("./inflectionclasses/NounInflectionClass.js");
-const VerbInflectionClass = require("./inflectionclasses/VerbInflectionClass.js");
-const InflectionPattern = require("./inflectionpattern.js");
+import InflectionPattern from "./InflectionPattern";
+import NounInflectionClass from "./inflectionclasses/NounInflectionClass";
+import VerbInflectionClass from "./inflectionclasses/VerbInflectionClass";
+import Language from "./language";
 
-const fs = require("fs");
+import fs from "fs";
 
-class LanguageConstructor {
-    static constructLanguageFromJSON(json) {
+export default class LanguageConstructor {
+    static constructLanguageFromJSON(json: any) {
         let language = new Language(json.name);
 
         language.name = json.name;
@@ -19,7 +19,7 @@ class LanguageConstructor {
 
         let nounInflectionClasses = json["nounInflectionClasses"];
 
-        nounInflectionClasses.forEach((inflectionClass) => {
+        nounInflectionClasses.forEach((inflectionClass: NounInflectionClass) => {
             let nounInflectionClass = new NounInflectionClass(
                 inflectionClass.name,
                 inflectionClass.rootPatterns,
@@ -28,15 +28,14 @@ class LanguageConstructor {
                 inflectionClass.cases
             );
 
-            let numberJSON = { ...inflectionClass.inflectionPatternMatrix };
-            let genderJSON = { ...numberJSON };
-            let caseJSON = { ...genderJSON };
+            //let numberJSON = { ...inflectionClass.inflectionPatternMatrix };
+            //let genderJSON = { ...numberJSON };
+            //let caseJSON = { ...genderJSON };
 
             Object.keys(inflectionClass.inflectionPatternMatrix).forEach((number) => {
                 Object.keys(inflectionClass.inflectionPatternMatrix[number]).forEach((gender) => {
                     Object.keys(inflectionClass.inflectionPatternMatrix[number][gender]).forEach((case_) => {
                         let obj = inflectionClass.inflectionPatternMatrix[number][gender][case_];
-
                         let inflectionPattern = new InflectionPattern(
                             obj.rootPattern,
                             obj.replacements,
@@ -51,7 +50,7 @@ class LanguageConstructor {
         });
 
         let verbInflectionClasses = json["verbInflectionClasses"];
-        verbInflectionClasses.forEach((inflectionClass) => {
+        verbInflectionClasses.forEach((inflectionClass: VerbInflectionClass) => {
             let verbInflectionClass = new VerbInflectionClass(
                 inflectionClass.name,
                 inflectionClass.rootPattern,
@@ -61,12 +60,6 @@ class LanguageConstructor {
                 inflectionClass.numbers,
                 inflectionClass["persons"]
             );
-
-            let numberJSON = { ...inflectionClass.inflectionPatternMatrix };
-            let personJSON = { ...numberJSON };
-            let moodJSON = { ...personJSON };
-            let tenseJSON = { ...moodJSON };
-            let voiceJSON = { ...tenseJSON };
 
             Object.keys(inflectionClass.inflectionPatternMatrix).forEach((mood) => {
                 Object.keys(inflectionClass.inflectionPatternMatrix[mood]).forEach((voice) => {
@@ -104,13 +97,11 @@ class LanguageConstructor {
         return language;
     }
 
-    static constructLanguageFromJSONFile(path) {
+    static constructLanguageFromJSONFile(path: any) {
         const jsonFile = fs.readFileSync(path);
 
-        const json = JSON.parse(jsonFile);
+        const json = JSON.parse(jsonFile.toString());
 
         return LanguageConstructor.constructLanguageFromJSON(json);
     }
 }
-
-module.exports = LanguageConstructor;
