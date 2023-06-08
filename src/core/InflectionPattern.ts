@@ -18,14 +18,15 @@ export default class InflectionPattern {
         if (!this.rootPattern.test(root)) {
             throw new Error(`Root ${root} does not match pattern ${this.rootPattern}`);
         }
-        let matches = root.matchAll(this.rootPattern);
+        // DOES NOT WORK WITHOUT THIS LINE FOR SOME REASON
+        root.match(this.rootPattern);
 
         // If the root matches the pattern, return a string converting it into the result pattern
         let result = "";
 
         //matches = root.matchAll(this.rootPattern);
 
-        let cmatch = matches.next().value;
+        let cmatch = root.matchAll(this.rootPattern).next().value;
 
         for (let i = 1, j = 0; i < cmatch.length; i++) {
             if (this.inflectionIndices.includes(i - 1)) {
