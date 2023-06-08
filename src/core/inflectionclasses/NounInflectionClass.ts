@@ -1,5 +1,6 @@
 import InflectionClass from "./InflectionClass";
 import InflectionPattern from "../InflectionPattern";
+import RegexReplacer from "../../helpers/RegexReplacer";
 
 export default class NounInflectionClass extends InflectionClass {
     public rootPatterns: string[];
@@ -11,6 +12,9 @@ export default class NounInflectionClass extends InflectionClass {
     constructor(name: string, rootPatterns: string[], numbers: string[], genders: string[], cases: string[]) {
         super(name);
         this.rootPatterns = rootPatterns;
+        for (let idx in this.rootPatterns) {
+            this.rootPatterns[idx] = RegexReplacer.canonize(this.rootPatterns[idx]);
+        }
         this.numbers = numbers;
         this.genders = genders;
         this.cases = cases;

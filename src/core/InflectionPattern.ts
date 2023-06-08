@@ -1,16 +1,22 @@
+import RegexReplacer from "../helpers/RegexReplacer";
+
 export default class InflectionPattern {
     public rootPattern: RegExp;
     public replacements: string[];
     public inflectionIndices: number[];
+    public pattern: RegExp;
 
     constructor(rootPattern: string | RegExp, replacements: string[], inflectionIndices: number[]) {
-        this.rootPattern = RegExp(rootPattern, "g");
+        let x = RegExp(rootPattern, "").toString();
+        x = x.substring(1, x.length - 1);
+        this.rootPattern = RegExp(`^${x}\$`, "g");
         this.replacements = replacements;
         this.inflectionIndices = inflectionIndices;
+        this.pattern = RegExp(RegexReplacer.transformRegex(rootPattern, replacements, inflectionIndices), "g");
     }
 
     toString() {
-        return `(${this.rootPattern}, ${this.replacements}, ${this.inflectionIndices})`;
+        return `(${this.rootPattern}, ${this.pattern})`;
     }
 
     inflect(root: string, caseSensitive: boolean = false): string {
@@ -38,5 +44,9 @@ export default class InflectionPattern {
         }
 
         return result;
+    }
+
+    match(word: string): boolean {
+        return this.pattern.test(word);
     }
 }

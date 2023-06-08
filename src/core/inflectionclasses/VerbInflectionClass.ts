@@ -1,3 +1,4 @@
+import RegexReplacer from "../../helpers/RegexReplacer";
 import InflectionPattern from "../InflectionPattern";
 import InflectionClass from "./InflectionClass";
 
@@ -20,7 +21,7 @@ export default class VerbInflectionClass extends InflectionClass {
         persons: string[]
     ) {
         super(name);
-        this.rootPattern = rootPattern;
+        this.rootPattern = RegexReplacer.canonize(rootPattern);
         this.moods = moods;
         this.voices = voices;
         this.tenses = tenses;
