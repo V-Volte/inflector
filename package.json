@@ -1,5 +1,5 @@
 {
-    "name": "inflector",
+    "name": "inflectrix",
     "version": "1.0.0",
     "description": "A tool to inflect words",
     "main": "dist/index.js",
