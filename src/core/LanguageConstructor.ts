@@ -1,7 +1,7 @@
 import InflectionPattern from "./InflectionPattern";
 import NounInflectionClass from "./inflectionclasses/NounInflectionClass";
 import VerbInflectionClass from "./inflectionclasses/VerbInflectionClass";
-import Language from "./language";
+import Language from "./Language";
 
 import fs from "fs";
 

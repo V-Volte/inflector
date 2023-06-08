@@ -13,11 +13,12 @@ export default class InflectionPattern {
         return `(${this.rootPattern}, ${this.replacements}, ${this.inflectionIndices})`;
     }
 
-    inflect(root: string): string {
-        let matches = root.matchAll(this.rootPattern);
-        if (matches === null) {
+    inflect(root: string, caseSensitive: boolean = false): string {
+        if (!caseSensitive) root = root.toLowerCase();
+        if (!this.rootPattern.test(root)) {
             throw new Error(`Root ${root} does not match pattern ${this.rootPattern}`);
         }
+        let matches = root.matchAll(this.rootPattern);
 
         // If the root matches the pattern, return a string converting it into the result pattern
         let result = "";
